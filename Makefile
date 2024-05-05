@@ -12,7 +12,7 @@ MAKE = $(CC) $(CFLAGS) $(LDFLAGS) $(DEFSAVE)
 
 all: build
 
-build: $(SOURCE)
+build:
 	$(MAKE) tiosave.c -o tiosave
 	$(MAKE) tioload.c -o tioload
 	chmod +x tiosave
