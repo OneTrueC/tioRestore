@@ -1,5 +1,5 @@
 tioRestore
-========
+==========
 **tioRestore** is two programs that I made at 1:30am while extremely angry at a
 certain program for not correctly restoring my termios. At the time the
 libraries depended by that program were broken, and so I wrote these.
@@ -9,7 +9,7 @@ Usage
 ```
 $ tiosave
 some other stuff
-$ tiolaod
+$ tioload
 ```
 
 Info
