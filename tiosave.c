@@ -16,14 +16,14 @@ main()
 	struct termios terms;
 
 	if (tcgetattr(STDIN_FILENO, &terms) < 0) {
-		perror("tiosave: termios failed: ");
+		perror("tiosave: termios failed");
 		return errno;
 	}
 
 	termfd = fopen(SAVELOC, "w");
 
 	if (termfd == NULL) {
-		perror("tiosave: file open failed: ");
+		perror("tiosave: file open failed");
 		return errno;
 	}
 

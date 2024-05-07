@@ -18,7 +18,7 @@ main()
 	termfd = fopen(SAVELOC, "r");
 
 	if (termfd == NULL) {
-		perror("tioload: file open failed: ");
+		perror("tioload: file open failed");
 		return errno;
 	}
 
@@ -28,7 +28,7 @@ main()
 	}
 
 	if (tcsetattr(STDIN_FILENO, TCSAFLUSH, &terms) < 0) {
-		perror("tioload: termios failed: ");
+		perror("tioload: termios failed");
 		return errno;
 	}
 
